@@ -1,20 +1,17 @@
 html {
     height: 100%;
-}
-
-html, body {
-    min-height: 100%;
-}
-
-main {
-    padding-bottom: 150px;
+    box-sizing: border-box;
 }
 
 body {
+    position: relative;
+    min-height: 100%;
     background-image: url("img/background.jpg");
     background-attachment: fixed;
     margin: 0;
     overflow-y: scroll;
+    box-sizing: inherit;
+    padding-bottom: 13%;
 }
 
 .clear { clear: both;}
@@ -51,6 +48,10 @@ nav {
     background-color: coral;
 }
 
+.spacer {
+  margin-top: 200px;
+}
+
 .about {
     background-color: peachpuff;
     margin: auto;
@@ -82,7 +83,7 @@ nav {
 }
 footer {
     background-color: blanchedalmond;
-    position: relative;
+    position: absolute;
     bottom: 0%;
     left: 50%;
     transform: translate(-50%);
