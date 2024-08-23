@@ -48,6 +48,10 @@ nav {
     background-color: coral;
 }
 
+.navbox:active {
+    background-color: maroon;
+}
+
 .spacer {
   margin-top: 200px;
 }
