@@ -1,0 +1,104 @@
+/* CSS validator will give a dynamic nature warning, so root colors are duplicated here */
+:root {
+  --color-main: blanchedalmond;
+  --color-hover: coral;
+  --color-active: firebrick;
+  --color-secondary: peachpuff;
+  --color-invalid: tomato;
+  --color-valid: springgreen;
+  --color-focus: white;
+  --color-confirm: #b6ffb4;
+}
+
+.myform {
+    margin: 30px;
+  }
+  .myForm input {
+    width: 280px;
+    display: flex;
+    margin: 10px 40px;
+    padding: 10px;
+    border-radius: 2%;
+    border: 5px;
+    border-left: 10px solid;
+    transition: background-color, border-left-color 0.5s;
+  }
+  .myForm input:required {
+    background-color: var(--color-main);
+  }
+  .myForm input:invalid {
+    border-left-color: var(--color-invalid);
+  }
+  .myForm input:valid {
+    border-left-color: var(--color-valid);
+  }
+  .myForm input:focus {
+    background-color: var(--color-focus);
+  }
+
+button {
+    display: block;
+    margin-top: 2rem;
+    height: 44px;
+    font-family: inherit;
+    background-color: var(--color-main);
+    font-size: large;
+    font-weight: 700;
+    border: solid var(--color-hover);
+  }
+  button:hover {
+    background-color: var(--color-hover);
+    transition: background-color 0.5s;
+    }
+  button.confirm:hover {
+    background-color: var(--color-confirm)
+  }
+
+#open_dialog {
+margin: 0 auto;
+}
+
+dialog {
+border: none !important;
+border-radius: 30px;
+box-shadow: 0 0 #0000, 0 0 #0000, 0 50px 30px -12px rgba(0, 0, 0, 0.5);
+padding: 1.6rem;
+max-width: 400px;
+}
+
+dialog img {
+display: block;
+max-width: 75%;
+margin: 1rem 0 auto 2rem;
+}
+
+dialog::backdrop {
+backdrop-filter: blur(4px);
+}
+
+.h1 {
+margin: 2rem 0 1rem;
+font-weight: 900;
+}
+
+.h2 {
+margin: 2rem 0 1rem;
+font-weight: 800;
+}
+
+p {
+line-height: 1.5;
+}
+
+.flex {
+display: flex;
+flex-wrap: wrap;
+}
+
+.flex.flex-space-between {
+margin: 20px;
+}
+
+.flex button {
+margin: 10px auto;
+}
