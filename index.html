@@ -1,79 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Redo</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="dialog.css">
-        <script src="dialog.js" defer></script>
-    </head>
-    <body>
-        <nav class="clearfix">
-            <div class="navbox" id="Home">Home</div>  
-            <div class="navbox" id="About">About</div> 
-            <div class="navbox" id="Contact">Contact</div>  
-            <div class="navbox-login" id="Login">
-                <img src="img/login.svg" alt="login" id="open_dialog" class="svg">
-            </div>
-        </nav>
+  <head>
+    <title>Redo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dialog.css" />
+    <script src="dialog.js" defer></script>
+  </head>
+  <body>
+    <nav class="clearfix">
+      <div class="navbox" id="Home">Home</div>
+      <div class="navbox" id="About">About</div>
+      <div class="navbox" id="Contact">Contact</div>
+      <div class="navbox-login" id="Login">
+        <img src="img/login.svg" alt="login" id="open_dialog" class="svg" />
+      </div>
+    </nav>
+    <div class="clear"></div>
+    <main>
+      <img src="img/hero.jpg" alt="hero" class="hero" />
+      <div class="spacer"></div>
+      <section class="about">
+        <img class="floatimg" src="img/fz.png" alt="fz" />
+        <img src="img/dog.webp" alt="Pupper" class="pupper" />
+        <h1>Me again :S</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat ut
+          dolores repellat enim odio? Laborum rerum eligendi quas. Maiores
+          pariatur quisquam earum veniam! Est, adipisci architecto similique
+          veritatis hic unde?
+        </p>
         <div class="clear"></div>
-        <main>
-            <img src="img/hero.jpg" alt="hero" class="hero">
-            <div class="spacer"></div>
-            <section class="about">
-                <img class="floatimg" src="img/fz.png" alt="fz">
-                <img src="img/dog.webp" alt="Pupper" class="pupper">
-                <h1>Me again :S</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Fugiat ut dolores repellat enim odio? Laborum rerum eligendi quas.
-                    Maiores pariatur quisquam earum veniam!
-                    Est, adipisci architecto similique veritatis hic unde?
-                </p>
-                <div class="clear"></div>
-            </section>
-        </main>
-        <footer>
-            <p>I need sleep</p>
-        </footer>
-        <dialog>
-            <img src="img/woof.jpg" alt="woof">
-            <h2 id="dialog_title" class="h2">Sign in</h2>
-            <p id="dialog_description">
-              In order to sign in, fill out the following.
-            </p>
-            <form class="myForm" method="get">
-              <label for="username">Name:</label>
-              <input
-              type="text"
-              autocomplete="name"
-              id="username"
-              placeholder="(minimum 2 characters)"
-              minlength="2"
-              required>
-              <br>
-              <label for="pwd">Password:</label>
-              <input
-              type="password"
-              id="pwd"
-              placeholder="(minimum 8 characters, one uppercase letter)"
-              pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-              required
-              >
-              <br>
-              <label for="email">Email:</label>
-              <input
-              type="email"
-              id="email"
-              pattern=".+@metropolia\.fi"
-              placeholder="john.smith@metropolia.fi"
-              required
-              >
-            <div class="flex flex-space-between">
-              <button id="close_dialog">I don't think so</button>
-              <button id="confirm_dialog" class="confirm">Confirm</button>
-            </div>
-            </form>
-          </dialog>
-    </body>
+      </section>
+    </main>
+    <footer>
+      <p>I need sleep</p>
+    </footer>
+    <dialog>
+      <img src="img/woof.jpg" alt="woof" />
+      <h2 id="dialog_title" class="h2">Sign in</h2>
+      <p id="dialog_description">
+        In order to sign in, fill out the following.
+      </p>
+      <form action="" class="sign" method="dialog">
+        <fieldset>
+          <label for="username">Name:</label>
+          <input
+            type="text"
+            autocomplete="name"
+            id="username"
+            placeholder="(minimum 2 characters)"
+            minlength="2"
+            required
+          />
+          <label for="pwd">Password:</label>
+          <input
+            type="password"
+            id="pwd"
+            placeholder="(min 8 characters, 1 uppercase letter)"
+            pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            pattern=".+@metropolia\.fi"
+            placeholder="john.smith@metropolia.fi"
+            required
+          />
+          <div>
+            <button id="close_dialog">I don't think so</button>
+            <button id="confirm_dialog" class="confirm">Confirm</button>
+          </div>
+        </fieldset>
+      </form>
+    </dialog>
+  </body>
 </html>
