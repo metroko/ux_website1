@@ -95,7 +95,7 @@ nav {
 }
 
 .spacer {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .hero-container {
@@ -130,11 +130,16 @@ nav {
 }
 
 .pill-nav {
+    text-align: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.pill-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80vw;
-    margin: auto;
+    margin-top: 10px;
 }
 
 button {
