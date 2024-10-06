@@ -12,10 +12,13 @@
 
 fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .sign input {
-    width: 90%;
+    width: 100%;
     margin: 10px 0px;
     padding: 10px;
     border-radius: 2%;
@@ -36,25 +39,11 @@ fieldset {
     background-color: var(--color-focus);
   }
 
-button {
-    display: block;
-    float: left;
-    margin-left: 15%;
-    margin-top: 20px;
-    height: 44px;
-    font-family: inherit;
-    background-color: var(--color-main);
-    font-size: large;
-    font-weight: 700;
-    border: solid var(--color-hover);
-  }
-  button:hover {
-    background-color: var(--color-hover);
-    transition: background-color 0.5s;
-    }
-  button.confirm:hover {
-    background-color: var(--color-confirm);
-  }
+.dialog-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
 
 #open_dialog {
   margin: 0 auto;
@@ -95,12 +84,5 @@ p {
 @media only screen and (min-width: 700px) and (orientation: landscape) {
   dialog {
     max-width: 500px;
-  }
-  .sign input {
-    width: 90%;
-    margin: 10px 0px;
-  }
-  button {
-    margin-left: 15%;
   }
 }

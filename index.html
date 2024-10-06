@@ -19,7 +19,22 @@
     </nav>
     <div class="clear"></div>
     <main>
-      <img src="img/hero.jpg" alt="hero" class="hero" />
+      <section class="hero-container">
+        <img src="img/hero.jpg" alt="hero" class="hero" />
+        <div class="hero-text">
+          <h1>Dog Site</h1>
+          <p>Looking for dogs? You're in the right place.</p>
+        </div>
+      </section>
+      <div class="spacer"></div>
+      <section class="pill-nav">
+        <button class="pill-button" id="Dog 1">McNab</button>
+        <button class="pill-button" id="Dog 2">Dachshund</button>
+        <button class="pill-button" id="Dog 3">Chihuahua</button>
+        <button class="pill-button" id="Dog 4">Labrador</button>
+        <button class="pill-button" id="Dog 5">Dalmatian</button>
+        <button class="pill-button" id="Dog 5">Shiba Inu</button>
+      </section>
       <div class="spacer"></div>
       <section class="about">
         <img class="floatimg" src="img/fz.png" alt="fz" />
@@ -70,7 +85,7 @@
             placeholder="john.smith@metropolia.fi"
             required
           />
-          <div>
+          <div class="dialog-buttons">
             <button id="close_dialog">I don't think so</button>
             <button id="confirm_dialog" class="confirm">Confirm</button>
           </div>
